@@ -11,9 +11,7 @@ const Task3 = () => {
         const res = await fetch("https://jsonplaceholder.typicode.com/users");
 
         if (!res.ok) {
-          throw new Error(
-            `Failed to fetch data. Status code: ${response.status}`
-          );
+          throw new Error(`Failed to fetch data. Status code: ${res.status}`);
         }
 
         const data = await res.json();
