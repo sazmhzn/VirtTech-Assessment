@@ -1,7 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./page/Theme/Layout";
-import Task1 from "./page/task1";
+import Task1 from "./page/Task1";
 import Task3 from "./page/Task3";
 import LogicalTask from "./page/LogicalTask";
 
