@@ -8,9 +8,10 @@ const Header = () => {
 
   // Links data
   const links = [
-    { id: 1, name: "Task1", href: "/" },
-    { id: 2, name: "LogicalTask", href: "/logicalTask" },
-    { id: 3, name: "Task3", href: "/task3" },
+    { id: 1, name: "Task 1", href: "/" },
+    { id: 2, name: "Logical Task", href: "/logicalTask" },
+    { id: 3, name: "Task 3", href: "/task3" },
+    { id: 4, name: "Task 4", href: "https://virt-login-task.netlify.app" },
   ];
 
   // Handle link click to set active link
