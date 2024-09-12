@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   // Track the active link
-  const [activeLink, setActiveLink] = useState(null);
+  const [activeLink, setActiveLink] = useState(1);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   // Links data
