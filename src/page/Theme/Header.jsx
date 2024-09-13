@@ -56,14 +56,16 @@ const Header = () => {
 
       {/* Dropdown menu for smaller screens */}
       {isMenuOpen && (
-        <ul className="absolute right-12 top-16 bg-white shadow-md p-4 flex flex-col gap-2 max-md:flex md:hidden">
+        <ul className="absolute z-10 right-12 top-16 bg-white shadow-md p-4 flex flex-col gap-2 max-md:flex md:hidden">
           {links.map((link) => (
             <li key={link.id}>
               <a
                 href={link.href}
                 onClick={() => handleLinkClick(link.id)}
-                className={`text-black-1 hover:underline ${
-                  activeLink === link.id ? "font-bold underline" : ""
+                className={`  ${
+                  activeLink === link.id
+                    ? "font-semibold text-blue-600"
+                    : "text-neutral-800 hover:text-neutral-900"
                 }`}
               >
                 {link.name}
